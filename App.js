@@ -41,7 +41,7 @@ export const AppStack = () => {
         name="SignUp"
         component={SignUpScreen}
         initialParams={{
-          name: "Guest Sign Up",
+          name: "Customer Sign Up",
         }}
         options={({ route }) => ({
           title: route.params.name,

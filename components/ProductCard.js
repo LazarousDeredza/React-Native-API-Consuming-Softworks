@@ -17,6 +17,8 @@ export default function ProductCard({
   hp,
   created_at,
   updated_at,
+  country,
+  
 }) {
   const { borderColor, emoji } = getTypeDetails(type);
   return (
@@ -38,6 +40,9 @@ export default function ProductCard({
           <Text style={styles.typeEmoji}>{emoji}</Text>
           <Text style={styles.typeText}>{type}</Text>
         </View>
+      </View>
+      <View style={styles.countryContainer}>
+        <Text style={styles.typeText}>{country}</Text>
       </View>
 
       <View style={styles.dateContainer}>
@@ -94,7 +99,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: 40,
+    marginBottom: 30,
+  },
+  countryContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 10,
   },
   badge: {
     flexDirection: "row",
@@ -116,14 +127,14 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   dateText: {
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: "bold",
   },
   updateDateContainer: {
     marginBottom: 8,
   },
   updateDateText: {
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: "bold",
   },
 });
