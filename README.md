@@ -26,7 +26,7 @@
 
 ---
 
-### project description
+### Project description
 
 This project is a simple react native project for consuming API but it also has UI . It allows you to sign up, sign in and fetch products and countries from the provided API end point. 
 
